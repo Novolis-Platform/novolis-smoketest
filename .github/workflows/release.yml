@@ -8,3 +8,4 @@ permissions:
 jobs:
   publish:
     uses: Novolis-Platform/novolis-workflows/.github/workflows/dotnet-publish-nuget.yml@main
+    secrets: inherit
