@@ -9,3 +9,4 @@ permissions:
 jobs:
   ci:
     uses: Novolis-Platform/novolis-workflows/.github/workflows/dotnet-ci.yml@main
+    secrets: inherit
