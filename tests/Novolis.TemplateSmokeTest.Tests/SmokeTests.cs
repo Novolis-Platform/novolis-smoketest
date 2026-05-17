@@ -1,9 +1,12 @@
-using Xunit;
+using TUnit.Core;
 
 namespace Novolis.TemplateSmokeTest.Tests;
 
 public class SmokeTests
 {
-    [Fact]
-    public void Ping() => Assert.Equal("ok", TemplateSmokeTest.Smoke.Ping());
+    [Test]
+    public async Task Ping()
+    {
+        await Assert.That(TemplateSmokeTest.Smoke.Ping()).IsEqualTo("ok");
+    }
 }

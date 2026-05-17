@@ -4,9 +4,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="TUnit" />
     <ProjectReference Include="../../src/Novolis.TemplateSmokeTest/Novolis.TemplateSmokeTest.csproj" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="xunit" />
-    <PackageReference Include="xunit.runner.visualstudio" />
   </ItemGroup>
 </Project>
