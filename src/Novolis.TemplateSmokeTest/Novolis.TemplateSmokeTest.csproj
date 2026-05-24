@@ -2,7 +2,6 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <PackageId>Novolis.TemplateSmokeTest</PackageId>
-    <Version>0.1.0</Version>
-    <Description>Smoke test package for CI and NuGet publishing validation</Description>
+<Description>Smoke test package for CI and NuGet publishing validation</Description>
   </PropertyGroup>
 </Project>
