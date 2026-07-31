@@ -1,20 +1,46 @@
+<!-- novolis-package-index:start -->
+> **GitHub Packages shows this repository README on every package page** (upstream limitation).
+> Open the **package README** for install and quick start — embedded in each .nupkg and linked below.
+
+## Published packages
+
+| Package | Install | Package README |
+|---------|---------|----------------|
+| `Novolis.TemplateSmokeTest` | `dotnet add package Novolis.TemplateSmokeTest` | [README](https://github.com/Novolis-Platform/novolis-smoketest/blob/main/src/Novolis.TemplateSmokeTest/README.md) |
+
+For NuGet.org and Visual Studio, the **embedded** README.md inside each package is authoritative.
+
+<!-- novolis-package-index:end -->
+
 # novolis-smoketest
 
-## What it is
+Minimal packable library used to validate NuGet publishing and CI smoke workflows across the platform.
 
-novolis-smoketest in the Novolis ecosystem.
+## Package
+
+| Package | Description |
+|---------|-------------|
+| [Novolis.TemplateSmokeTest](src/Novolis.TemplateSmokeTest/README.md) | Tiny API (`Smoke.Ping()`) for pipeline verification |
 
 ## Current status
 
-Bootstrap / active development.
+Bootstrap / active development — intentionally small surface for merge and release workflow tests.
 
 ## Install
 
-Not yet published.
+```bash
+dotnet add package Novolis.TemplateSmokeTest
+```
+
+Packages publish to **GitHub Packages** (`2026.1.*`) and **nuget.org**. Use **`Novolis.Platform.slnx`** for local ProjectReference iteration on dependent repos.
 
 ## Quick start
 
-Not yet available.
+```csharp
+using Novolis.TemplateSmokeTest;
+
+Console.WriteLine(Smoke.Ping()); // "ok"
+```
 
 ## Documentation
 
